@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="form.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-3">
+                <img src="small.jpg" height=100px width=100px>
+            </div>
+            <div class="col-xs-6">
+                <h1>Employee Salary Details</h1>
+            </div>
+            <div class="col-xs-3">
+                <h2>User Name</h2>
+            </div>
+        </div>
+        <hr/>
+        <h2>My Salary</h2>
+        <form class="form-horizontal">
+            <div class="form-group">
+                <label class="col-md-2 control-label">Name:</label>
+                <div class="col-md-8">
+                    <input type="text" class="form-control row" id="userName" pattern="[A-Za-z]{0,15}" placeholder="Enter Name" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="form-inline">
+                    <label class="col-md-2 control-label" for="Amount">Amount:</label>
+                    <div class="input-group col-md-8 ">
+                        <span class="input-group-addon">$</span>
+                        <input type="number" class="form-control " id="Amount" placeholder="Amount" required>
+                        <span class="input-group-addon">.00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="Password" class="col-md-2 control-label">Password:</label>
+                <div class="col-md-8">
+                    <input type="password" class="form-control row " id="Password" placeholder="Enter Password" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="radio-inline col-md-offset-2 ">
+                    <input type="radio" name="radioOptions" id="Radio1" value="option1"> savings
+                </label>
+                <label class="radio-inline">
+                    <input type="radio" name="radioOptions" id="Radio2" value="option2"> current
+                </label>
+            </div>
+            <div class="form-group ">
+                <div class="col-md-offset-2">
+                    <button type="submit" class="btn btn-default" onclick="fnGetData()">Submit</button>&nbsp;
+                    <button type="reset" class="btn btn-default">reset</button>
+                </div>
+            </div>
+        </form>
+        <hr/>
+        <div class="row">
+            <div class="col-md-7">&#169;Copyright</div>
+            <div class="col-md-3">About</div>
+            <div class="col-md-2">ContactUs</div>
+        </div>
+    </div>
+</body>
+
+</html>
